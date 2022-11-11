@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>SOCCER SCORES MX</h1>
+    <div id="formulario" class="col-md-4 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <h2> Sesión actual </h2>
+                    <button
+                        class="btn btn-danger"
+                        (click) = "logout()"
+                        *ngIf="(auth.isAuthenticated$ | async)"> CERRAR SESIÓN
+                    </button>
+                    <button
+                        class="btn btb-success btn-block"
+                        (click) = "loginWithRedirect()"
+                        *ngIf="!(auth.isAuthenticated$ | async)">INICIAR SESIÓN
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img id="logo" src="https://i.ibb.co/sw6ch7m/logo-removebg-preview.png" alt="">
+</body>
+</html>

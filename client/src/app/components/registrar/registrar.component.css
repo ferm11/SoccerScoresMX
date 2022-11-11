@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: url(https://images.alphacoders.com/510/thumb-1920-510026.jpg);
+    background-size: cover;
+
+}
+
+#formulario{
+    text-align: center;
+    padding-top: 40px; /*Baja el texto del recuadro*/
+    font-family:'Times New Roman', Times, serif; /*Tipo de letra*/
+    margin: auto; /*Centra el recuadro*/
+    margin-top: 40px; /* Sirve para bajar el recuadro*/
+}
+
+.form-group{
+    width: 90%;
+    margin-bottom: 5px;
+    padding: 7px;
+    margin-top: 10px;
+    margin: auto;
+    font-family: cursive;
+}
+
+h1{
+    text-align: center;
+    font-family:cursive;
+    font-size: 50px;
+    color: black;
+    padding-top: 120px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: cursive;
+}
+
+button{
+    width: 87%;
+    margin-bottom: 8px;
+    padding: 4px;
+    background-color: cadetblue;
+    margin-top: 7px;
+    font-family: cursive;
+}
+
+#logo{
+    position: absolute; z-index: 5px;
+    margin-top: -410px;
+    width: 180px;
+    margin-left: 80px;
+}
