@@ -10,7 +10,6 @@ export class YoutubePipe implements PipeTransform {
 
   transform(value : string): any {
     let url = 'https://www.youtube.com/embed/';
-    return this._dom.bypassSecurityTrustResourceUrl(url+value);
+    return this._dom.bypassSecurityTrustResourceUrl(url + value);
   }
-
 }

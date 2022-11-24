@@ -25,14 +25,11 @@ export class YoutubeComponent implements OnInit {
 
   detalleVideo(a:string){
     console.log(a);
-    
-   this.videoId=a;
-   $('#exampleModal').modal();
-    
+    this.videoId=a;
   }
 
   cerrarModal(){
-    this.videoId = "";
+    this.videoId = 'null';
     $('#exampleModal').modal('hide');
   }
 

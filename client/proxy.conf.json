@@ -1,0 +1,7 @@
+{
+    "/*" : {
+        "target" : "https://www.youtube.com/",
+        "secure" : "false",
+        "loglevel" : "debug"
+    }
+}
