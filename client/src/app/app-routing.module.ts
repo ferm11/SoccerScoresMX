@@ -5,6 +5,7 @@ import { RegistrarComponent } from './components/registrar/registrar.component';
 import { AbstractApiComponent } from './components/abstract-api/abstract-api.component';
 import { YoutubeComponent } from './components/youtube/youtube.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ component: LoginComponent
   {
     path: 'youtube',
     component: YoutubeComponent
+  },
+  {
+    path: 'tienda',
+    component: TiendaComponent
   }
 ];
 

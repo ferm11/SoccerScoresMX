@@ -30,6 +30,9 @@
             <a class="nav-link" href="/clima" *ngIf="(auth.isAuthenticated$ | async)">CLIMA</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/tienda" *ngIf="(auth.isAuthenticated$ | async)">TIENDA</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/youtube" *ngIf="(auth.isAuthenticated$ | async)">VIDEOS</a>
           </li>
         </ul>

@@ -17,6 +17,8 @@ import { YoutubePipe } from './pipe/youtube.pipe';
 import { YoutubeComponent } from './components/youtube/youtube.component';
 import { CommonModule } from '@angular/common';
 import { WeatherComponent } from './components/weather/weather.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { WeatherComponent } from './components/weather/weather.component';
     AbstractApiComponent,
     YoutubePipe,
     YoutubeComponent,
-    WeatherComponent
+    WeatherComponent,
+    TiendaComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { WeatherComponent } from './components/weather/weather.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    GooglePayButtonModule,
     // Import the module into the application, with configuration
     AuthModule.forRoot({
       domain: 'dev-e80k845i.us.auth0.com',

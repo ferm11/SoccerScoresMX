@@ -1,0 +1,11 @@
+<div class="demo">
+    <google-pay-button
+    environment="TEST"
+    [buttonColor]="buttonColor"
+    [buttonType]="buttonType"
+    [buttonSizeMode]="isCustomSize ? 'fill' : 'static'"
+    [paymentRequest]="paymentRequest" 
+    [style.width.px]="buttonWidth"
+    [style.height.px]="buttonHeight"
+    (loadpaymentdata)="onLoadPaymentData($any($event))"></google-pay-button>
+  </div>
