@@ -1,4 +1,8 @@
-<div class="demo">
+<div class="card m-0 row justify-content-center align-items-center" style="width: 20rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Suscripción premium a SoccerScoresMX</h5>
+    <p class="card-text">Con la suscripción premium de SoccerScoresMX tienes algunos beneficios como poder ver los resultados y acciones en vivo de cada uno de los partidos de la liga Mexicana de fútbol</p>
     <google-pay-button
     environment="TEST"
     [buttonColor]="buttonColor"
@@ -7,5 +11,7 @@
     [paymentRequest]="paymentRequest" 
     [style.width.px]="buttonWidth"
     [style.height.px]="buttonHeight"
-    (loadpaymentdata)="onLoadPaymentData($any($event))"></google-pay-button>
+    (loadpaymentdata)="onLoadPaymentData($any($event))">
+  </google-pay-button>
   </div>
+</div>

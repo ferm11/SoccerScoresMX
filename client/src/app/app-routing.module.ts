@@ -6,6 +6,7 @@ import { AbstractApiComponent } from './components/abstract-api/abstract-api.com
 import { YoutubeComponent } from './components/youtube/youtube.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
+import { ScoresListComponent } from './components/scores-list/scores-list.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-path: 'login',
-component: LoginComponent
+    path : 'home',
+    component : ScoresListComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: 'users/add',
