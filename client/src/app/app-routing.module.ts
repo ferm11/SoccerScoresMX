@@ -11,7 +11,7 @@ import { ScoresListComponent } from './components/scores-list/scores-list.compon
 const routes: Routes = [
   {
     path:'',
-    redirectTo: '/',
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {
