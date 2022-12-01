@@ -10,7 +10,7 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo: '/',
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {

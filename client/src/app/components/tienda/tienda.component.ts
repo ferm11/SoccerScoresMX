@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GooglePayButtonModule } from '@google-pay/button-angular/angular-public-api';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
