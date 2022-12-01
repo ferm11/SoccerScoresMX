@@ -48,7 +48,7 @@ export class TiendaComponent implements OnInit {
     transactionInfo: {
       totalPriceStatus: "FINAL",
       totalPriceLabel: "Total",
-      totalPrice: "100.00",
+      totalPrice: "10.00",
       currencyCode: "USD",
       countryCode: "US"
     }

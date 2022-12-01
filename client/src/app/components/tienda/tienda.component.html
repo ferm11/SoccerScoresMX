@@ -1,17 +1,20 @@
-<div class="card m-0 row justify-content-center align-items-center" style="width: 20rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Suscripción premium a SoccerScoresMX</h5>
-    <p class="card-text">Con la suscripción premium de SoccerScoresMX tienes algunos beneficios como poder ver los resultados y acciones en vivo de cada uno de los partidos de la liga Mexicana de fútbol</p>
-    <google-pay-button
-    environment="TEST"
-    [buttonColor]="buttonColor"
-    [buttonType]="buttonType"
-    [buttonSizeMode]="isCustomSize ? 'fill' : 'static'"
-    [paymentRequest]="paymentRequest" 
-    [style.width.px]="buttonWidth"
-    [style.height.px]="buttonHeight"
-    (loadpaymentdata)="onLoadPaymentData($any($event))">
-  </google-pay-button>
+<body>
+  <div class="card position-relative top-100 start-50 translate-middle text-center" style="width: 25rem;">
+    <img src="https://i.ibb.co/sw6ch7m/logo-removebg-preview.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title fs-2 fw-bolder">Suscripción GOLD</h5>
+      <p class="card-text">Con la suscripción gold de SoccerScoresMX tienes algunos beneficios extra como poder ver los resultados y acciones en vivo de cada uno de los partidos de la liga Mexicana de fútbol, además de alineaciones antes que otras plataformas, etc.</p>
+      <h5 class="fs-4 fw-bolder">Sólo $5 USD</h5>
+      <google-pay-button
+      environment="TEST"
+      [buttonColor]="buttonColor"
+      [buttonType]="buttonType"
+      [buttonSizeMode]="isCustomSize ? 'fill' : 'static'"
+      [paymentRequest]="paymentRequest" 
+      [style.width.px]="buttonWidth"
+      [style.height.px]="buttonHeight"
+      (loadpaymentdata)="onLoadPaymentData($any($event))">
+    </google-pay-button>
+    </div>
   </div>
-</div>
+</body>
