@@ -1,3 +1,20 @@
 .main-container{
     margin-top: 20px;
 }
+
+#tarjeta {
+    width: 265px;
+    height: 500px;
+}
+
+body{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: url(https://images.alphacoders.com/510/thumb-1920-510026.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

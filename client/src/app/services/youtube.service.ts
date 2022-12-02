@@ -17,7 +17,7 @@ export class YoutubeService {
   constructor( private _http : HttpClient ) { }
 
   obtenerVideos(){
-    const parametros = new HttpParams().set('part', 'snippet').set('channelId', this.canalId).set('maxResults', '10').set('order','date').set('key', this.apikey);
+    const parametros = new HttpParams().set('part', 'snippet').set('channelId', this.canalId).set('maxResults', '5').set('order','date').set('key', this.apikey);
     let url = `${this.url}/search`;
     return this._http.get(url,{params:parametros}).pipe(map(resp => resp));
   }
