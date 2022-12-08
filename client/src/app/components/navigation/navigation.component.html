@@ -1,33 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/login">SOCCER SCORES MX</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/" routerLinkActive="active" *ngIf="(auth.isAuthenticated$ | async)">HOME</a>
-          </li>
-          <li id="sesion" class="nav-item">
-            <a class="nav-link" routerLink="/login" routerLinkActive="active">SESIÓN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/maps" *ngIf="(auth.isAuthenticated$ | async)">MAPS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/mapas" *ngIf="(auth.isAuthenticated$ | async)">MAPA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/clima" *ngIf="(auth.isAuthenticated$ | async)">CLIMA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/tienda" *ngIf="(auth.isAuthenticated$ | async)">TIENDA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/youtube" *ngIf="(auth.isAuthenticated$ | async)">VIDEOS</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/login">SOCCER SCORES MX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-auto">
+        <li id="sesion" class="nav-item">
+          <a class="nav-link" routerLink="/login" routerLinkActive="active">SESIÓN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mapas" *ngIf="(auth.isAuthenticated$ | async)">MAPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/clima" *ngIf="(auth.isAuthenticated$ | async)">CLIMA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tienda" *ngIf="(auth.isAuthenticated$ | async)">TIENDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/youtube" *ngIf="(auth.isAuthenticated$ | async)">VIDEOS</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
