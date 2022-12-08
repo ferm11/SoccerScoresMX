@@ -7,6 +7,8 @@ import { YoutubeComponent } from './components/youtube/youtube.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { ScoresListComponent } from './components/scores-list/scores-list.component';
+import { MapType } from '@angular/compiler';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 const routes: Routes = [
   {
@@ -41,6 +43,10 @@ const routes: Routes = [
   {
     path: 'tienda',
     component: TiendaComponent
+  },
+  {
+    path: 'mapas',
+    component: MapaComponent
   }
 ];
 

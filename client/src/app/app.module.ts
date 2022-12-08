@@ -19,6 +19,7 @@ import { CommonModule } from '@angular/common';
 import { WeatherComponent } from './components/weather/weather.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { GooglePayButtonModule } from '@google-pay/button-angular';
+import { MapaComponent } from './components/mapa/mapa.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { GooglePayButtonModule } from '@google-pay/button-angular';
     YoutubePipe,
     YoutubeComponent,
     WeatherComponent,
-    TiendaComponent
+    TiendaComponent,
+    MapaComponent
   ],
   imports: [
     BrowserModule,

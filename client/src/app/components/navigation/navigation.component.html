@@ -13,10 +13,10 @@
             <a class="nav-link" routerLink="/login" routerLinkActive="active">SESIÓN</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/users/add" routerLinkActive="active" *ngIf="!(auth.isAuthenticated$ | async)">REGISTRARSE</a>
+            <a class="nav-link" href="/maps" *ngIf="(auth.isAuthenticated$ | async)">MAPS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/maps" *ngIf="(auth.isAuthenticated$ | async)">MAPS</a>
+            <a class="nav-link" href="/mapas" *ngIf="(auth.isAuthenticated$ | async)">MAPA</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/clima" *ngIf="(auth.isAuthenticated$ | async)">CLIMA</a>

@@ -4,6 +4,25 @@
     <div class="card-body">
       <h5 class="card-title fs-3 fw-bolder">Suscripción GOLD</h5>
       <p class="card-text">Con la suscripción gold de SoccerScoresMX tienes algunos beneficios extra como poder ver los resultados y acciones en vivo de cada uno de los partidos de la liga Mexicana de fútbol, además de alineaciones antes que otras plataformas, etc.</p>
+      <h5 class="fs-4 fw-bolder">Sólo $10 USD</h5>
+      <google-pay-button
+      environment="TEST"
+      [buttonColor]="buttonColor"
+      [buttonType]="buttonType"
+      [buttonSizeMode]="isCustomSize ? 'fill' : 'static'"
+      [paymentRequest]="paymentRequest" 
+      [style.width.px]="buttonWidth"
+      [style.height.px]="buttonHeight"
+      (loadpaymentdata)="onLoadPaymentData($any($event))">
+    </google-pay-button>
+    </div>
+  </div>
+
+  <div id="bronce" class="card position-relative top-50 start-50 translate-middle text-center align-items-center" style="width: 30rem;">
+    <img src="https://i.ibb.co/sw6ch7m/logo-removebg-preview.png" class="card-img-top" alt="..." style="width: 15rem;">
+    <div class="card-body">
+      <h5 class="card-title fs-3 fw-bolder">Suscripción BRONZE</h5>
+      <p class="card-text">Con la suscripción bronze de SoccerScoresMX tienes pocos beneficios que los gratuitos, resumenes de tus equipos favoritos, información relevante y otras cosas más.</p>
       <h5 class="fs-4 fw-bolder">Sólo $5 USD</h5>
       <google-pay-button
       environment="TEST"
@@ -17,4 +36,24 @@
     </google-pay-button>
     </div>
   </div>
+
+  <div id="plata" class="card position-relative top-50 start-50 translate-middle text-center align-items-center" style="width: 30rem;">
+    <img src="https://i.ibb.co/sw6ch7m/logo-removebg-preview.png" class="card-img-top" alt="..." style="width: 15rem;">
+    <div class="card-body">
+      <h5 class="card-title fs-3 fw-bolder">Suscripción SILVER</h5>
+      <p class="card-text">Con la suscripción silver de SoccerScoresMX tendras más beneficios que el bronce, resumenes de tus equipos favoritos, información relevante de tus equipoc y ligas favoritas, segumiento de partidos y muchas cosas más.</p>
+      <h5 class="fs-4 fw-bolder">Sólo $7 USD</h5>
+      <google-pay-button
+      environment="TEST"
+      [buttonColor]="buttonColor"
+      [buttonType]="buttonType"
+      [buttonSizeMode]="isCustomSize ? 'fill' : 'static'"
+      [paymentRequest]="paymentRequest" 
+      [style.width.px]="buttonWidth"
+      [style.height.px]="buttonHeight"
+      (loadpaymentdata)="onLoadPaymentData($any($event))">
+    </google-pay-button>
+    </div>
+  </div>
+
 </body>
